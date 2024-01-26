@@ -1,0 +1,27 @@
+
+body{
+  background: #001717;
+}
+.progress-container {
+    width: 50%;
+    background: #001717;
+    box-shadow: inset 8px 8px 16px #000909,
+            inset -8px -8px 16px #002525;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 20% 30%;
+  }
+
+  .progress-bar {
+    width: 0;
+    height: 30px;
+    background: #023030;
+    box-shadow: inset 18px 18px 36px #000909,
+            inset -18px -18px 36px #002525;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    border: 1px solid #000909;
+    border-radius: 50px;
+    transition: width 0.5s cubic-bezier(0.1, 0,0.8,.5);
+  }

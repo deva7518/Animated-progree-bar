@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="progress-container">
+    <div class="progress-bar">0%</div>
+  </div>
+
+  <script>
+    // Simulate progress animation using JavaScript
+    document.addEventListener('DOMContentLoaded', function () {
+      var progressBar = document.querySelector('.progress-bar');
+      var progress = 0;
+
+      function updateProgress() {
+        progress += 5; // Increase the progress by 5% (adjust as needed)
+        progressBar.style.width = progress + '%';
+        progressBar.innerHTML = progress + '%';
+
+        if (progress < 100) {
+          setTimeout(updateProgress, 200); // Adjust the delay for smoother animation
+        }
+      }
+
+      updateProgress();
+    });
+  </script>
+
+</body>
+</html>
